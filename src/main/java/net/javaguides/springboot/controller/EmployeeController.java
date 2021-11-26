@@ -20,6 +20,7 @@ import net.javaguides.springboot.service.EmployeeService;
 @RequestMapping("/api/employees")
 public class EmployeeController {
 	
+	@Autowired
 	private EmployeeService  employeeService;
 
 	public EmployeeController(EmployeeService employeeService) {
@@ -27,7 +28,7 @@ public class EmployeeController {
 		this.employeeService = employeeService;
 	}
 //build create employee REST API.response entity represent the entire http status,we can control any options which goes into it
-	@PostMapping()
+	@PostMapping("/add")
 	public ResponseEntity<Employee> saveEmployee(@RequestBody Employee employee) {
 		return new ResponseEntity<Employee>(employeeService.saveEmployee(employee),HttpStatus.CREATED);
 	}

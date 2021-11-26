@@ -8,6 +8,14 @@ public class SpringbootBackendApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringbootBackendApplication.class, args);
+		helloWorld();
+		
 	}
+	static public void helloWorld()
+	{
+		System.out.println("Hello World");
+	}
+	
+	
 
 }
