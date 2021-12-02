@@ -11,11 +11,5 @@ public class SpringbootBackendApplication {
 		helloWorld();
 		
 	}
-	static public void helloWorld()
-	{
-		System.out.println("Hello World");
-	}
 	
-	
-
 }
