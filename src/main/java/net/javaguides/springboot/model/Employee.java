@@ -17,7 +17,7 @@ public class Employee {
 	@Id  //denotes primary key
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	//@generated value generation strategies for the values of primary keys
-	private long id;
+	private Long id;
 	
 	@Column(name = "first_name", nullable = false)
 	private String firstName;
@@ -29,7 +29,7 @@ public class Employee {
 	private String email;
 	
 	@Column(name = "number")
-	private long number;
+	private Long number;
 	    
      @Column(name = "address")
 	 private String address;
@@ -95,11 +95,11 @@ public class Employee {
 		}
 
 		//getters and setters for number
-		public long getNumber() {
+		public Long getNumber() {
 			return number;
 		}
 
-		public void setNumber(long number) {
+		public void setNumber(Long number) {
 			this.number = number;
 		}
 	
@@ -107,11 +107,11 @@ public class Employee {
 	
 	
 
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -143,7 +143,7 @@ public class Employee {
 		super();
 	}
 
-	public Employee(long id, String firstName, String lastName, String email, long number, String address, String role, String doj, String dob, String password) {
+	public Employee(Long id, String firstName, String lastName, String email, Long number, String address, String role, String doj, String dob, String password) {
 		super();
 		this.id = id;
 		this.firstName = firstName;
