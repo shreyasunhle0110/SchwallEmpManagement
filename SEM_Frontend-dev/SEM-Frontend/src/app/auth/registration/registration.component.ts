@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Employee } from 'src/app/Model/employee.model';
+import { RegistrationService } from 'src/app/Service/registration.service';
 
 @Component({
   selector: 'app-registration',
@@ -9,12 +11,15 @@ import { NgForm } from '@angular/forms';
 export class RegistrationComponent implements OnInit {
 
   isLoading = false;
-
-  constructor() { }
+  constructor(private empService: RegistrationService) { 
+    
+  }
 
   ngOnInit(): void {
   }
   onSignUp(form: NgForm) {
-    console.log(form.value);
+    
+    
+    
   }
 }
